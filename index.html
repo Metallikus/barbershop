@@ -11,16 +11,19 @@
       <nav class="main-navigation">
         <ul>
           <li>
+            <a class="current-page" href="index.html">Главная</a>
+          </li>
+          <li>
             <a href="#">Информация</a>
           </li>
           <li>
             <a href="#">Новости</a>
           </li>
           <li>
-            <a href="#">Прайс-лист</a>
+            <a href="price.html">Прайс-лист</a>
           </li>
           <li>
-            <a href="#">Магазин</a>
+            <a href="shop.html">Магазин</a>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -29,6 +32,19 @@
       </nav>
       <div class="user-block">
         <a class="login" href="#">Вход</a>
+      </div>
+      <div class="login-form popup">
+        <button id="login-close" class="btn-close" type="button"> </button>
+        <b class="login-popup-title">Личный кабинет</b>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form class="login-form" action="." method="post">
+          <input id="login-form-username" class="login-form-username" type="text" name="username" placeholder="ЛОГИН">
+          <input id="login-form-pass" class="login-form-pass" type="password" name="password" placeholder="Пароль">
+          <input id="login-form-remember" class="login-form-remember" type="checkbox" name="remember" checked>
+          <label for="login-form-remember">Запомнить меня</label>
+          <a class="login-form-forgote" href="#">Я забыл пароль</a>
+          <button class="login-form-submit" type="submit" name="enter">Войти</button>
+        </form>
       </div>
     </div>
   </header>
